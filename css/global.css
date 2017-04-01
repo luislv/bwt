@@ -1,0 +1,43 @@
+@charset "utf-8";
+fieldset{border:0 none;margin:0;padding:0}
+a:focus{text-decoration:none}
+.inblo{display:inline-block;*display:inline;*zoom:1;/*兼容ie7*/}
+.lh1{line-height:100%}
+.lh2{line-height:125%}
+.lh3{line-height:150%}
+.lh4{line-height:175%}
+.lh5{line-height:200%}
+.fullwidth{width:100%}
+.halfwidth{width:50%}
+.thirdwidth{width:33.3%}
+.left {left:0}
+.right {right:0}
+.top {top:0}
+.bottom {bottom:0}
+.fullwidth{width:100%}
+.tl{text-align:left}
+.tr{text-align:right}
+.vb{vertical-align:bottom}
+.vt{vertical-align:top}
+.ti{text-indent:2em}
+.tdu{text-decoration:underline}
+.hand{cursor:pointer}
+.mb3-m{margin-bottom:-3px}
+.typo-5fgray, a.typo-5fgray{color:#5f6062}
+.bg-white{background-color:#fff}
+
+/*公共头部*/
+.header{border-bottom:1px solid #ccc;box-shadow:0 0 10px #666;-webkit-box-shadow:0 0 10px #666;-moz-box-shadow:0 0 10px #666;-o-box-shadow:0 0 10px #666}
+.logo-container .logo{width:142px}
+.logo-container .logo-desc-box{border-left:1px solid #d7d7d8}
+.logo-container .logo-desc{width:256px;margin-top:37px}
+.header-nav li a{color:#5f6062}
+.header-nav li a:hover{color:#09bb10}
+.header-nav li.active a{color:#f5b6c7;border-bottom:2px solid #f5b6c7}
+@media only screen and (max-width:768px) {
+    .logo-container{padding:10px}
+    .logo-container .logo{width:120px}
+    .logo-container .logo-desc-box{display:none}
+    .btn-menu{display:block !important}
+    .header-nav, .btn-search{display:none}
+}

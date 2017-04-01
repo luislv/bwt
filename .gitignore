@@ -1,0 +1,7 @@
+Application/Runtime/*
+.idea/*
+node_modules/*
+gulpfile.js
+package.json
+dist/*
+rev/*

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../images/favicon.ico"/>
+    <title>Bootstrap的HTML标准模板</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和媒体查询，如果不需要用可以移除 -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/global.css"/>
+</head>
+<body>
+<!--头部-->
+<header class="header">
+    <div class="bg-white pt25 pb20 container logo-container">
+        <a href="#"><img class="mb3-m logo" src="../images/bwt-logo.png" alt="logo"/></a>
+        <div class="logo-desc-box inblo h50 ml15 pl15"><img class="mb3-m logo-desc" src="../images/bwt-logo-desc.png" alt="logo description"/></div>
+        <a class="hide fr btn-menu J_navMenu" href="javascript:void(0);"><i class="iconfont fs26 typo-5fgray">&#xe654;</i></a>
+        <nav class="fr">
+            <ul class="fr header-nav">
+                <li class="fl active"><a class="inblo pl15 pr15 pt10 pb25 fs16 lh1" href="#">BWT</a></li>
+                <li class="fl"><a class="inblo pl15 pr15 pt10 pb25 fs16 lh1" href="#">产品</a></li>
+                <li class="fl"><a class="inblo pl15 pr15 pt10 pb25 fs16 lh1" href="#">专利</a></li>
+                <li class="fl"><a class="inblo pl15 pr15 pt10 pb25 fs16 lh1" href="#">服务</a></li>
+                <li class="fl"><a class="inblo pl15 pr15 pt10 pb25 fs16 lh1" href="#">商店</a></li>
+                <li class="fl"><a class="inblo pl15 pr15 pt10 pb25 fs16 lh1" href="#">动态</a></li>
+            </ul>
+            <div class="fl btn-search"><i class="iconfont fs16 typo-5fgray inblo ml50 pt10 pb25 pl5 pr5 hand">&#xe601;</i></div>
+        </nav>
+        <div class="J_navContent" style="display:none;width:100px;height:100px;background-color:red;position:absolute;top:100px;right:-100px;"></div>
+    </div>
+</header>
+
+<!--底部-->
+<footer>
+bbb
+</footer>
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script>
+    $('.J_navMenu').on('click', function() {
+            $('.J_navContent').css('display', 'block').animate({
+                right: 0
+            }, 300);
+    });
+</script>
+</body>
+</html>
