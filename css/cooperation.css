@@ -18,6 +18,14 @@
     .partner-banner{height:142px}
     .partner-banner .image{width:650px;position:absolute;left:50%;top:0;margin-left:-325px}
 }
+/*水生活*/
+.life-container{padding-bottom:60px}
+.life-container .image, .join-container .image{width:100%}
+@media only screen and (max-width:768px) {
+    .life-container h2, .join-container h2{font-size:20px}
+    .life-container{padding-bottom:30px}
+    .join-container{padding:40px 0}
+}
 
 /**
  * 合作板块-合作伙伴页面
@@ -26,7 +34,7 @@
 .contact-container .contact .icon-sina{margin-left:5%}
 .contact-container .contact .icon-wechat{margin-left:20%}
 .contact-container .contact .icon-qq{margin-left:20%}
-.contact-container .contact dl{font-size:14px;line-height:24px;color:#848484;}
+.contact-container .contact dl{font-size:14px;line-height:24px;color:#848484}
 @media only screen and (max-width:992px) {
     .contact-container .contact .company{padding-top:20px}
 }
@@ -64,10 +72,23 @@
     .service-center .article-box .paragraph-box{margin-top:10px;height:auto;}
     .service-center .article-box .paragraph-box .paragraph{position:relative}
 }
-/*水生活*/
-.life-container{padding-bottom:60px}
-.life-container .image{width:100%}
+
+/**
+ * 合作板块-招商加盟页面
+ */
+.join-banner{}
+.join-banner .image{width:100%}
+.join-container .company dl{font-size:14px;line-height:24px;color:#848484}
 @media only screen and (max-width:768px) {
-    .life-container h2{font-size:20px}
-    .life-container{padding-bottom:30px}
+    .join-container h2{text-align:left}
+    .join-container p{text-align:left}
 }
+@media only screen and (max-width:450px) {
+    .join-banner{height:87px}
+    .join-banner .image{width:450px;position:absolute;left:50%;top:0;margin-left:-225px}
+}
+.join-figure img{width:100%}
+.join-figure figcaption{padding:30px 10%}
+.join-article{padding:40px 30px 20px;background-color:#fae3ed}
+.join-article .box{height:310px;overflow:auto}
+.join-article p{text-indent:1.8em}

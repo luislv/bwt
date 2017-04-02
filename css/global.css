@@ -30,6 +30,7 @@ a:focus{text-decoration:none}
 .typo-a7gray, a.typo-a7gray{color:#a7a7a7}
 .typo-4agray, a.typo-4agray{color:#4a4a4a}
 .typo-cdgray, a.typo-cdgray{color:#cdcdcd}
+.typo-dbgray, a.typo-dbgray{color:#dbdbdb}
 .typo-84gray, a.typo-84gray{color:#848484}
 .typo-cered, a.typo-cered{color:#ce025d}
 .typo-f4pink, a.typo-f4pink{color:#f4b6c8}
@@ -38,6 +39,7 @@ a:focus{text-decoration:none}
 .bg-efgray{background-color:#efefef}
 .bor-b-e7{border-bottom:1px solid #e7e7e7}
 .contentBox{box-sizing:content-box !important}
+.line-dashed{border-bottom:1px dashed #d1d1d1;height:0}
 
 /*公共头部*/
 .header{border-bottom:1px solid #ccc;box-shadow:0 0 10px #666;-webkit-box-shadow:0 0 10px #666;-moz-box-shadow:0 0 10px #666;-o-box-shadow:0 0 10px #666;z-index:1}
