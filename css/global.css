@@ -23,22 +23,31 @@ a:focus{text-decoration:none}
 .tdu{text-decoration:underline}
 .hand{cursor:pointer}
 .mb3-m{margin-bottom:-3px}
+.fs28{font-size:28px}
 .typo-white, a.typo-white{color:#fff}
 .typo-5fgray, a.typo-5fgray{color:#5f6062}
+.typo-9bgray, a.typo-9bgray{color:#9b9b9b}
 .typo-a7gray, a.typo-a7gray{color:#a7a7a7}
+.typo-4agray, a.typo-4agray{color:#4a4a4a}
+.typo-cdgray, a.typo-cdgray{color:#cdcdcd}
+.typo-84gray, a.typo-84gray{color:#848484}
+.typo-cered, a.typo-cered{color:#ce025d}
+.typo-f4pink, a.typo-f4pink{color:#f4b6c8}
 .bg-white{background-color:#fff}
+.bg-f5pink{background-color:#f5b7c8}
 .bg-efgray{background-color:#efefef}
+.bor-b-e7{border-bottom:1px solid #e7e7e7}
 .contentBox{box-sizing:content-box !important}
 
 /*公共头部*/
-.header{border-bottom:1px solid #ccc;box-shadow:0 0 10px #666;-webkit-box-shadow:0 0 10px #666;-moz-box-shadow:0 0 10px #666;-o-box-shadow:0 0 10px #666}
+.header{border-bottom:1px solid #ccc;box-shadow:0 0 10px #666;-webkit-box-shadow:0 0 10px #666;-moz-box-shadow:0 0 10px #666;-o-box-shadow:0 0 10px #666;z-index:1}
 .logo-container .logo{width:142px}
 .logo-container .logo-desc-box{border-left:1px solid #d7d7d8}
 .logo-container .logo-desc{width:256px;margin-top:37px}
 .header-nav li a{color:#5f6062}
 .header-nav li a:hover{color:#09bb10}
 .header-nav li.active a{color:#f5b6c7;border-bottom:2px solid #f5b6c7}
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:992px) {
     .logo-container{padding:10px}
     .logo-container .logo{width:120px}
     .logo-container .logo-desc-box{display:none}
@@ -47,8 +56,8 @@ a:focus{text-decoration:none}
 }
 
 /*移动端导航侧栏*/
-.navContent{display:none;width:260px;height:100%;position: fixed;top: 0;right:-260px;z-index: 102;overflow-y: scroll;-webkit-overflow-scrolling: touch;background-color: #b683b5;box-shadow: 0 0 10px rgba(50, 50, 50, 0.5);}
-.navContent .smallSearchContainer{height:35px;background-color:#f5b7c8;padding:15px}
+.navContent{display:none;width:260px;height:100%;position: fixed;top: 0;right:-260px;z-index: 102;overflow-y: scroll;-webkit-overflow-scrolling: touch;background-color: #a2808f;box-shadow: 0 0 10px rgba(50, 50, 50, 0.5);}
+.navContent .smallSearchContainer{height:35px;background-color:#a2808f;padding:15px}
 .navContent .smallSearchContainer .searchBarSmall{display: block;width: 190px;height: 32px;border: 1px solid #d0a4a4;background: #fff;position: relative;border-radius: 3px;}
 .navContent .smallSearchContainer .searchInput{position: relative;vertical-align: top;background-color: transparent;font-size: 14px;width: 150px;height: 32px;margin: 0;background: none;padding: 0 0 0 27px;border: 0;line-height: 16px;}
 .navContent .smallSearchContainer .submitSearchSmall{width: 25px;height: 100%;position: absolute;top: 0;left: 0;margin: 0;border: 0;padding: 0;color: #c9c;cursor: pointer;background-color: #fff;}

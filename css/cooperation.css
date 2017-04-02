@@ -1,0 +1,73 @@
+/**
+ * 合作板块公用
+ */
+/*banner*/
+.partner-banner .image{width:100%}
+.partner-banner .title {top:37%;right:16%}
+.partner-banner .title h2{font-size:30px;color:#cf3f61}
+.partner-banner .title p{font-size:22px;color:#ff9cc3}
+@media only screen and (max-width:992px) {
+    .partner-banner .title h2{font-size:22px}
+    .partner-banner .title p{font-size:16px;margin-top:3px}
+}
+@media only screen and (max-width:768px) {
+    .partner-banner .title h2{font-size:16px}
+    .partner-banner .title p{font-size:12px;margin-top:3px}
+}
+@media only screen and (max-width:650px) {
+    .partner-banner{height:142px}
+    .partner-banner .image{width:650px;position:absolute;left:50%;top:0;margin-left:-325px}
+}
+
+/**
+ * 合作板块-合作伙伴页面
+ */
+/*联系方式*/
+.contact-container .contact .icon-sina{margin-left:5%}
+.contact-container .contact .icon-wechat{margin-left:20%}
+.contact-container .contact .icon-qq{margin-left:20%}
+.contact-container .contact dl{font-size:14px;line-height:24px;color:#848484;}
+@media only screen and (max-width:992px) {
+    .contact-container .contact .company{padding-top:20px}
+}
+@media only screen and (max-width:768px) {
+    .contact-container{padding-bottom:20px}
+    .contact-container .contact h2{padding-bottom:10px}
+}
+/*联系表单*/
+.contact-container .form-container .input-box{border:none;border-bottom:1px solid #d1d1d1;box-shadow:none;-webkit-box-shadow:none}
+.contact-container .form-container .submit-box{padding-bottom:40px}
+.contact-container .form-container .submit-box .btn-submit{margin-right:45px;width:210px;height:50px;font-size:20px;background-color:#f4b6c8;color:#fff;letter-spacing:1px}
+.contact-container .form-container .submit-box .btn-reset{border:none;font-size:20px;color:#9b9b9b;letter-spacing:1px}
+@media only screen and (max-width:768px) {
+    .contact-container .form-container .submit-box{padding-top:0;padding-bottom:20px}
+    .contact-container .form-container .submit-box .btn-submit{margin-right:10px;width:100px;}
+}
+
+/**
+ * 合作板块-服务指南页面
+ */
+/*服务中心*/
+.service-center{padding-bottom:60px}
+.service-center .image-box img{width:100%}
+.service-center .article-box h2{font-size:28px}
+.service-center .article-box h2 small{font-size:20px}
+.service-center .article-box .paragraph-box{height:140px}
+.service-center .article-box p{text-indent:1.8em}
+.service-center .article-box .btn-box i:hover{color:#ce025d}
+@media only screen and (max-width:768px) {
+    .service-center{padding-bottom:30px}
+    .service-center .article-box{padding-top:10px}
+    .service-center .article-box h2{font-size:20px;text-align:center;}
+    .service-center .article-box h2 small{font-size:14px}
+    .service-center .article-box .btn-box{display:none}
+    .service-center .article-box .paragraph-box{margin-top:10px;height:auto;}
+    .service-center .article-box .paragraph-box .paragraph{position:relative}
+}
+/*水生活*/
+.life-container{padding-bottom:60px}
+.life-container .image{width:100%}
+@media only screen and (max-width:768px) {
+    .life-container h2{font-size:20px}
+    .life-container{padding-bottom:30px}
+}

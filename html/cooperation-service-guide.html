@@ -15,6 +15,7 @@
     <![endif]-->
     <link rel="stylesheet" href="../css/base.css"/>
     <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../css/cooperation.css"/>
 </head>
 <body>
 <!--头部-->
@@ -83,7 +84,69 @@
         <!--移动端导航侧栏 end-->
     </div>
 </header>
-
+<!--主内容-->
+<main>
+    <div class="partner-banner pr">
+        <img class="image block mb3-m fullwidth" src="../images/cooperation-partner-banner.png" alt="banner"/>
+        <div class="pa title tr">
+            <h2 class="fn">您的反馈意见是我们前进的动力</h2>
+            <p class="mt10">Your feedback is our driving force</p>
+        </div>
+    </div>
+    <!--面包屑导航-->
+    <nav class="bor-b-e7">
+        <div class="container">
+            <div class="pt25 pb25">
+                <h2 class="fn fs14 inblo typo-5fgray">您所在的位置：</h2>
+                <p class="inblo fs14 typo-9bgray crumbs">首页>合作> <span class="typo-cered">在线留言</span></p>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <section>
+            <div class="row service-center">
+                <div class="col-md-6 col-sm-6 col-xs-12 pt40 image-box">
+                    <img class="mb3-m" src="../images/service-center.png" alt=""/>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 pt40 article-box">
+                    <article>
+                        <h2 class="fn typo-4agray pt15">服务中心<small class="ml20 typo-84gray">SERVICE</small></h2>
+                        <div class="paragraph-box mt30 fs16 lh4 typo-84gray cf pr lab1-block">
+                            <div class="pa top lab1-con paragraph">
+                                <p>iOS/Android APP交互设计媒体的核心价值在于其内容，而在当今为内容付费的成功案例都稀缺的情况下，用户是绝对不会为这类App的下载付费，而开发一个Native App需要花费较高的成本 ...
+                                    打破传统模板模式，让所有企业能够在最短时间内拥有一套高端网站，让WEB成为一种潮流！</p>
+                                <p>iOS/Android APP交互设计媒体的核心价值在于其内容，而在当今为内容付费的成功案例都稀缺的情况下，用户是绝对不会为这类App的下载付费，而开发一个Native App需要花费较高的成本 ...
+                                    打破传统模板模式，让所有企业能够在最短时间内拥有一套高端网站，让WEB成为一种潮流！</p>
+                                <p>iOS/Android APP交互设计媒体的核心价值在于其内容，而在当今为内容付费的成功案例都稀缺的情况下，用户是绝对不会为这类App的下载付费，而开发一个Native App需要花费较高的成本 ...
+                                    打破传统模板模式，让所有企业能够在最短时间内拥有一套高端网站，让WEB成为一种潮流！</p>
+                                <p>iOS/Android APP交互设计媒体的核心价值在于其内容，而在当今为内容付费的成功案例都稀缺的情况下，用户是绝对不会为这类App的下载付费，而开发一个Native App需要花费较高的成本 ...
+                                    打破传统模板模式，让所有企业能够在最短时间内拥有一套高端网站，让WEB成为一种潮流！</p>
+                            </div>
+                        </div>
+                        <div class="btn-box mt20 lab1-btn">
+                            <i class="iconfont fs35 typo-cdgray hand lab1-prev">&#xe608;</i>
+                            <i class="iconfont fs35 typo-cdgray hand ml5 lab1-next">&#xe615;</i>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section>
+            <article>
+                <div class="life-container">
+                    <h2 class="fn typo-4agray fs28 tc">我们只为你打造更美的水生活</h2>
+                    <p class="fs16 lh3 typo-84gray tc mt20 pb25">
+                        拥有一套 高端网站，让WEB成为一种潮流！<br>
+                        当今是互联网的时代，我们仍然对电力有着持续增长的需求，因为我们发明了家电等更多使用电力的产品。<br>
+                        不可否认新技术的不断出现使得电力成为人因为我们发明了家电等更多使用电力的产品。<br>
+                        不可否认新技术的不断出现使得电力成为因为我们发明了家电等更多
+                    </p>
+                    <img class="image" src="../images/cooperation-service-life.png" alt=""/>
+                </div>
+            </article>
+        </section>
+    </div>
+</main>
 <!--底部-->
 <footer>
     <div class="bg-efgray">
@@ -176,5 +239,45 @@
 <script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="../js/global.js"></script>
+<script>
+    $(function(){
+        /**
+         * 鼠标悬停，文章滚动
+         */
+        var lab1ab ;
+        $(".lab1-prev").hover(function(){
+            var top = parseInt($(".lab1-con").css("top")),
+                    h   = $(".lab1-block").height() - $(".lab1-con").height()
+
+            lab1ab = setInterval(function(){
+                top = parseInt($(".lab1-con").css("top"));
+                top -- ;
+                if(top > h){
+                    $(".lab1-con").stop().animate({top : top}, 1)
+                }
+            }, 1)
+        }, function(){
+            if(lab1ab){
+                clearInterval(lab1ab);
+            }
+        })
+        $(".lab1-next").hover(function(){
+            var top = parseInt($(".lab1-con").css("top")),
+                    h   = $(".lab1-block").height() - $(".lab1-con").height()
+
+            lab1ab = setInterval(function(){
+                top = parseInt($(".lab1-con").css("top"));
+                top ++ ;
+                if(top <= 0){
+                    $(".lab1-con").stop().animate({top : top}, 1)
+                }
+            }, 1)
+        }, function(){
+            if(lab1ab){
+                clearInterval(lab1ab);
+            }
+        })
+    })
+</script>
 </body>
 </html>

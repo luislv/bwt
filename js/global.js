@@ -1,38 +1,45 @@
 $(function() {
     /**
-     *  导航下拉列表
+     * 头部导航
      */
-    // 获取当前激活列表项索引
-    var index = $('a.active').index('.nav li a');
-    // 点击‘网上商城’导航，显示下拉列表
-    $('.J_shop').on('click', function(e) {
-        var self = $(this);
+
+    // 显示菜单栏
+    $('.J_navMenu').on('click', function() {
+        var e = getEvent();
+        console.log(e);
         e.preventDefault();
         e.stopPropagation();
-        if(self.hasClass('active')) {
-            self.removeClass('active');
-            // 还原列表项激活状态
-            $('.nav li a').eq(index).addClass('active');
-        } else {
-            // 使当前列表项处于激活状态
-            $('.nav li a').eq(index).removeClass('active');
-            self.addClass('active');
-        }
-        $('.J_shopDropdown').slideToggle('fast');
-    });
-    // 点击空白处收起导航下拉列表
-    $(document).on('click', function() {
-        $('.J_shop').removeClass('active');
-        $('.J_shopDropdown').slideUp('fast');
-        // 还原列表项激活状态
-        $('.nav li a').eq(index).addClass('active');
+        $('.J_navContent').css({
+            'display': 'block',
+            'box-shadow': '0 0 10px rgba(50, 50, 50, 0.5)'
+        }).animate({
+            right: 0
+        }, 300);
     });
 
-    /**
-     * 侧边菜单栏下拉
-     */
-    $('.J_menu').on('click', function() {
-        $(this).siblings('.J_dropDown').slideToggle('fast');
+    // 点击关闭按钮隐藏菜单栏
+    $('.J_navClose').on('click', function() {
+        $('.J_navContent').animate({
+            right: '-260px'
+        }, 300).css('box-shadow', 'none');
+    });
+
+    // 点击空白处隐藏菜单栏
+    $(document).on('click', function() {
+        var e = getEvent();
+        var target = e.target || e.srcElement;
+        if($(target).parents('.J_navContent').length == 0) {
+            $('.J_navContent').animate({
+                right: '-260px'
+            }, 300).css('box-shadow', 'none');
+        }
+    });
+
+    // 导航栏内选项下拉菜单
+    $('.J_accordion').on('click', function() {
+        var $this = $(this);
+        $this.siblings('.J_accordion').find('.J_accordion_dropdown').slideUp('fast');
+        $this.find('.J_accordion_dropdown').slideToggle('fast');
     });
 });
 
