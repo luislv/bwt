@@ -60,3 +60,19 @@ Tab.prototype={
         });
     }
 };
+
+/**
+ * 获取事件对象函数封装
+ */
+function getEvent(){
+    if(window.event){
+        return window.event;
+    }
+    var f = arguments.callee.caller;
+    do{
+        var e = f.arguments[0];
+        if(e && (e.constructor === Event || e.constructor===MouseEvent || e.constructor===KeyboardEvent)){
+            return e;
+        }
+    }while(f=f.caller);
+}

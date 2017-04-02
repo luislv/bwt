@@ -23,8 +23,12 @@ a:focus{text-decoration:none}
 .tdu{text-decoration:underline}
 .hand{cursor:pointer}
 .mb3-m{margin-bottom:-3px}
+.typo-white, a.typo-white{color:#fff}
 .typo-5fgray, a.typo-5fgray{color:#5f6062}
+.typo-a7gray, a.typo-a7gray{color:#a7a7a7}
 .bg-white{background-color:#fff}
+.bg-efgray{background-color:#efefef}
+.contentBox{box-sizing:content-box !important}
 
 /*公共头部*/
 .header{border-bottom:1px solid #ccc;box-shadow:0 0 10px #666;-webkit-box-shadow:0 0 10px #666;-moz-box-shadow:0 0 10px #666;-o-box-shadow:0 0 10px #666}
@@ -40,4 +44,33 @@ a:focus{text-decoration:none}
     .logo-container .logo-desc-box{display:none}
     .btn-menu{display:block !important}
     .header-nav, .btn-search{display:none}
+}
+
+/*移动端导航侧栏*/
+.navContent{display:none;width:260px;height:100%;position: fixed;top: 0;right:-260px;z-index: 102;overflow-y: scroll;-webkit-overflow-scrolling: touch;background-color: #b683b5;box-shadow: 0 0 10px rgba(50, 50, 50, 0.5);}
+.navContent .smallSearchContainer{height:35px;background-color:#f5b7c8;padding:15px}
+.navContent .smallSearchContainer .searchBarSmall{display: block;width: 190px;height: 32px;border: 1px solid #d0a4a4;background: #fff;position: relative;border-radius: 3px;}
+.navContent .smallSearchContainer .searchInput{position: relative;vertical-align: top;background-color: transparent;font-size: 14px;width: 150px;height: 32px;margin: 0;background: none;padding: 0 0 0 27px;border: 0;line-height: 16px;}
+.navContent .smallSearchContainer .submitSearchSmall{width: 25px;height: 100%;position: absolute;top: 0;left: 0;margin: 0;border: 0;padding: 0;color: #c9c;cursor: pointer;background-color: #fff;}
+.navContent .btn-navClose{top:10px;right:20px;border:none;margin-top: 7px;}
+.navContent .item-accordions{padding-top: 20px;padding-bottom: 60px;background-color: #fff;}
+.navContent .item-accordions .accordion{margin: 10px 15px;border: 1px solid #b683b5;border-radius: 2px;padding: 0 15px 0 10px;}
+.navContent .item-accordions .accordion .accordion-toggle{color: #b683b5;font-weight: bold;width: 100%;text-align: left;font-size: 16px;border: none;background-color: #fff;padding: 12px 0;-webkit-tap-highlight-color: transparent;}
+.navContent .item-accordions .accordion .accordion-toggle:focus{outline:none;background-color:#fff}
+.navContent .item-accordions .accordion .accordion-links a{color:#b683b5;display:block;margin-bottom:10px}
+
+/*公共底部*/
+.footer-container{padding:40px 0 65px;}
+.footer-container .category-title{border-bottom:1px solid #d7d7d7}
+.footer-container .category-con a{color:#939394}
+.footer-container .qrcode-container{width:89px;padding:6px 0;margin-top:55px}
+.footer-container .qrcode-container img{width:77px;height:77px}
+@media only screen and (max-width:992px) {
+    .footer-container .qrcode-container{margin-top:0}
+}
+@media only screen and (max-width:768px) {
+    .footer-container{padding:0 10px 20px}
+    .footer-container .contact-container{padding-left:25px}
+    .footer-container .category-title{padding-left:10px;padding-bottom:5px;margin-bottom:0}
+    .footer-container .category-con div{padding-top:8px}
 }

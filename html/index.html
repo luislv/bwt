@@ -24,7 +24,7 @@
         <div class="logo-desc-box inblo h50 ml15 pl15"><img class="mb3-m logo-desc" src="../images/bwt-logo-desc.png" alt="logo description"/></div>
         <a class="hide fr btn-menu J_navMenu" href="javascript:void(0);"><i class="iconfont fs26 typo-5fgray">&#xe654;</i></a>
         <nav class="fr">
-            <ul class="fr header-nav">
+            <ul class="fl header-nav">
                 <li class="fl active"><a class="inblo pl15 pr15 pt10 pb25 fs16 lh1" href="#">BWT</a></li>
                 <li class="fl"><a class="inblo pl15 pr15 pt10 pb25 fs16 lh1" href="#">产品</a></li>
                 <li class="fl"><a class="inblo pl15 pr15 pt10 pb25 fs16 lh1" href="#">专利</a></li>
@@ -32,23 +32,172 @@
                 <li class="fl"><a class="inblo pl15 pr15 pt10 pb25 fs16 lh1" href="#">商店</a></li>
                 <li class="fl"><a class="inblo pl15 pr15 pt10 pb25 fs16 lh1" href="#">动态</a></li>
             </ul>
-            <div class="fl btn-search"><i class="iconfont fs16 typo-5fgray inblo ml50 pt10 pb25 pl5 pr5 hand">&#xe601;</i></div>
+            <div class="fl btn-search"><i class="iconfont fs16 typo-5fgray inblo ml50 pt10 pb25 pl5 pr5 hand">&#xe600;</i></div>
         </nav>
-        <div class="J_navContent" style="display:none;width:100px;height:100px;background-color:red;position:absolute;top:100px;right:-100px;"></div>
+        <!--移动端导航侧栏 start-->
+        <div class="J_navContent navContent">
+            <div class="pr p10 contentBox smallSearchContainer">
+                <form action="#" class="J_formSearch searchBarSmall" method="GET">
+                    <input type="text" id="searchSmall" class="J_searchInput searchInput" placeholder="Search product" name="search" autocomplete="off" spellcheck="false" dir="auto">
+                    <button type="submit" class="J_btnSearch submitSearchSmall"><i class="iconfont fs14">&#xe600;</i></button>
+                </form>
+                <a class="J_navClose pa typo-white btn-navClose contentBox" href="javascript:void(0);"><i class="iconfont fs16">&#xe609;</i></a>
+            </div>
+            <div class="item-accordions contentBox">
+                <div class="J_accordion accordion contentBox">
+                    <button class="accordion-toggle contentBox">BWT <i class="iconfont fs16 fr">&#xe60d;</i></button>
+                    <div class="J_accordion_dropdown accordion-links pl10" style="display:none">
+                        <a href="#">品牌故事</a>
+                        <a href="#">关于我们</a>
+                        <a href="#">加入我们</a>
+                    </div>
+                </div>
+                <div class="J_accordion accordion contentBox">
+                    <button class="accordion-toggle contentBox">产品<i class="iconfont fs16 fr">&#xe60d;</i></button>
+                    <div class="J_accordion_dropdown accordion-links pl10" style="display:none">
+                        <a href="#">净水壶</a>
+                        <a href="#">滤芯</a>
+                        <a href="#">净水器</a>
+                    </div>
+                </div>
+                <div class="J_accordion accordion contentBox">
+                    <button class="accordion-toggle contentBox">产品<i class="iconfont fs16 fr">&#xe60d;</i></button>
+                    <div class="J_accordion_dropdown accordion-links pl10" style="display:none">
+                        <a href="#">净水壶</a>
+                        <a href="#">滤芯</a>
+                        <a href="#">净水器</a>
+                    </div>
+                </div><div class="J_accordion accordion contentBox">
+                <button class="accordion-toggle contentBox">产品<i class="iconfont fs16 fr">&#xe60d;</i></button>
+                <div class="J_accordion_dropdown accordion-links pl10" style="display:none">
+                    <a href="#">净水壶</a>
+                    <a href="#">滤芯</a>
+                    <a href="#">净水器</a>
+                </div>
+            </div>
+                <div class="accordion contentBox">
+                    <a class="accordion-toggle contentBox inblo" href="#">专利</a>
+                </div>
+            </div>
+        </div>
+        <!--移动端导航侧栏 end-->
     </div>
 </header>
 
 <!--底部-->
-<footer>
-bbb
+<footer class="bg-efgray">
+    <div class="container footer-container">
+        <div class="row">
+            <div class="col-md-3 col-sm-7 col-xs-7 pt25 contact-container">
+                <img class="block mb3-m pb15" src="../images/bwt-logo-footer.png" alt="logo"/>
+                <div class="row">
+                    <div class="col-md-12 col-sm-6 col-xs-12 mt10 fs12 lh1 typo-a7gray">BWT BARRIER Europe GmbH</div>
+                    <div class="col-md-12 col-sm-6 col-xs-12 mt10 fs12 lh1 typo-a7gray">Walter-Simmer-Strasse</div>
+                    <div class="col-md-12 col-sm-6 col-xs-12 mt10 fs12 lh1 typo-a7gray">4 A-5310 Mondsee</div>
+                    <div class="col-md-12 col-sm-6 col-xs-12 mt10 fs12 lh1 typo-a7gray">E-Mail: info@bwt-filter.com</div>
+                </div>
+            </div>
+            <div class="col-sm-5 col-xs-5 visible-sm visible-xs pt25 tc hide">
+                <div class="qrcode-container tc bg-white inblo">
+                    <img src="../images/qrcode-footer.png"/>
+                </div>
+            </div>
+            <div class="col-md-7 col-sm-12 col-xs-12">
+                <div class="row">
+                    <div class="col-md-1 hidden-sm hidden-xs"></div>
+                    <div class="col-md-2 col-sm-4 col-xs-12 pt25 category-container">
+                        <div class="fs14 lh1 typo-5fgray pb25 mb10 category-title">BWT</div>
+                        <div class="row category-con">
+                            <div class="col-md-12 col-sm-4 col-xs-4 pt15"><a class="fs12 lh1" href="#">品牌故事</a></div>
+                            <div class="col-md-12 col-sm-4 col-xs-4 pt15"><a class="fs12 lh1" href="#">品牌故事</a></div>
+                            <div class="col-md-12 col-sm-4 col-xs-4 pt15"><a class="fs12 lh1" href="#">品牌故事</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-12 pt25 category-container">
+                        <div class="fs14 lh1 typo-5fgray pb25 mb10 category-title">产品</div>
+                        <div class="row category-con">
+                            <div class="col-md-12 col-sm-4 col-xs-4 pt15"><a class="fs12 lh1" href="#">净水壶</a></div>
+                            <div class="col-md-12 col-sm-4 col-xs-4 pt15"><a class="fs12 lh1" href="#">滤芯</a></div>
+                            <div class="col-md-12 col-sm-4 col-xs-4 pt15"><a class="fs12 lh1" href="#">净水器</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-12 pt25 category-container">
+                        <div class="fs14 lh1 typo-5fgray pb25 mb10 category-title">专利</div>
+                        <div class="row category-con">
+                            <div class="col-md-12 col-sm-4 col-xs-4 pt15"><a class="fs12 lh1" href="#">镁离子滤芯技术</a></div>
+                            <div class="col-md-12 col-sm-4 col-xs-4 pt15"><a class="fs12 lh1" href="#">XXXX技术</a></div>
+                            <div class="col-md-12 col-sm-4 col-xs-4 pt15"><a class="fs12 lh1" href="#">XXXX技术</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-12 pt25 category-container">
+                        <div class="fs14 lh1 typo-5fgray pb25 mb10 category-title">动态</div>
+                        <div class="row category-con">
+                            <div class="col-md-12 col-sm-4 col-xs-4 pt15"><a class="fs12 lh1" href="#">江一燕限量款</a></div>
+                            <div class="col-md-12 col-sm-4 col-xs-4 pt15"><a class="fs12 lh1" href="#">预祝F1圆满成功</a></div>
+                            <div class="col-md-12 col-sm-4 col-xs-4 pt15"><a class="fs12 lh1" href="#">探班拍摄现场</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-12 pt25 category-container">
+                        <div class="fs14 lh1 typo-5fgray pb25 mb10 category-title">服务</div>
+                        <div class="row category-con">
+                            <div class="col-md-12 col-sm-4 col-xs-4 pt15"><a class="fs12 lh1" href="#">XXXX服务</a></div>
+                            <div class="col-md-12 col-sm-4 col-xs-4 pt15"><a class="fs12 lh1" href="#">XXXX服务</a></div>
+                            <div class="col-md-12 col-sm-4 col-xs-4 pt15"><a class="fs12 lh1" href="#">XXXX服务</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 hidden-sm hidden-xs"></div>
+                </div>
+            </div>
+            <div class="col-md-2 hidden-sm hidden-xs pt25 tc">
+                <div class="qrcode-container tc bg-white inblo">
+                    <img src="../images/qrcode-footer.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 <script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="../js/global.js"></script>
 <script>
+
+    // 显示菜单栏
     $('.J_navMenu').on('click', function() {
-            $('.J_navContent').css('display', 'block').animate({
-                right: 0
-            }, 300);
+        var e = getEvent();
+        console.log(e);
+        e.preventDefault();
+        e.stopPropagation();
+        $('.J_navContent').css({
+            'display': 'block',
+            'box-shadow': '0 0 10px rgba(50, 50, 50, 0.5)'
+        }).animate({
+            right: 0
+        }, 300);
+    });
+
+    // 点击关闭按钮隐藏菜单栏
+    $('.J_navClose').on('click', function() {
+        $('.J_navContent').animate({
+            right: '-260px'
+        }, 300).css('box-shadow', 'none');
+    });
+
+    // 点击空白处隐藏菜单栏
+    $(document).on('click', function() {
+        var e = getEvent();
+        var target = e.target || e.srcElement;
+        if($(target).parents('.J_navContent').length == 0) {
+            $('.J_navContent').animate({
+                right: '-260px'
+            }, 300).css('box-shadow', 'none');
+        }
+    });
+
+    // 导航栏下拉
+    $('.J_accordion').on('click', function() {
+        var $this = $(this);
+        $this.siblings('.J_accordion').find('.J_accordion_dropdown').slideUp('fast');
+        $this.find('.J_accordion_dropdown').slideToggle('fast');
     });
 </script>
 </body>
