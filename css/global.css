@@ -24,6 +24,7 @@ a:focus{text-decoration:none}
 .hand{cursor:pointer}
 .mb3-m{margin-bottom:-3px}
 .fs28{font-size:28px}
+.pb60{padding-bottom:60px}
 .typo-white, a.typo-white{color:#fff}
 .typo-5fgray, a.typo-5fgray{color:#5f6062}
 .typo-9bgray, a.typo-9bgray{color:#9b9b9b}
@@ -84,4 +85,18 @@ a:focus{text-decoration:none}
     .footer-container .contact-container{padding-left:25px}
     .footer-container .category-title{padding-left:10px;padding-bottom:5px;margin-bottom:0}
     .footer-container .category-con div{padding-top:8px}
+}
+
+/*面包屑导航*/
+.breadcrumb{margin-bottom:0;padding:0;display:inline-block;border:none;background:none}
+.breadcrumb li a{font-size:14px;color:#9b9b9b}
+.breadcrumb li.active{font-size:14px;color:#ce025d}
+.breadcrumb>li+li:before{padding: 0 5px;color: #ccc;content: ">"}
+
+/*头部banner*/
+@media only screen and (max-width:450px) {
+    .public-banner{height:87px}
+    .public-banner .image{width:450px;position:absolute;left:50%;top:0;margin-left:-225px}
+    .public-title-container h2{font-size:20px}
+    .public-title-container p{font-size:14px}
 }

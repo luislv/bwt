@@ -1,5 +1,5 @@
 /**
- * 合作板块公用
+ * 合作板块-合作伙伴页面
  */
 /*banner*/
 .partner-banner .image{width:100%}
@@ -18,18 +18,6 @@
     .partner-banner{height:142px}
     .partner-banner .image{width:650px;position:absolute;left:50%;top:0;margin-left:-325px}
 }
-/*水生活*/
-.life-container{padding-bottom:60px}
-.life-container .image, .join-container .image{width:100%}
-@media only screen and (max-width:768px) {
-    .life-container h2, .join-container h2{font-size:20px}
-    .life-container{padding-bottom:30px}
-    .join-container{padding:40px 0}
-}
-
-/**
- * 合作板块-合作伙伴页面
- */
 /*联系方式*/
 .contact-container .contact .icon-sina{margin-left:5%}
 .contact-container .contact .icon-wechat{margin-left:20%}
@@ -50,6 +38,14 @@
 @media only screen and (max-width:768px) {
     .contact-container .form-container .submit-box{padding-top:0;padding-bottom:20px}
     .contact-container .form-container .submit-box .btn-submit{margin-right:10px;width:100px;}
+}
+/*水生活*/
+.life-container{padding-bottom:60px}
+.life-container .image, .join-container .image{width:100%}
+@media only screen and (max-width:768px) {
+    .life-container h2, .join-container h2{font-size:20px}
+    .life-container{padding-bottom:30px}
+    .join-container{padding:40px 0}
 }
 
 /**
@@ -76,7 +72,6 @@
 /**
  * 合作板块-招商加盟页面
  */
-.join-banner{}
 .join-banner .image{width:100%}
 .join-container .company dl{font-size:14px;line-height:24px;color:#848484}
 @media only screen and (max-width:768px) {
@@ -92,3 +87,13 @@
 .join-article{padding:40px 30px 20px;background-color:#fae3ed}
 .join-article .box{height:310px;overflow:auto}
 .join-article p{text-indent:1.8em}
+
+/**
+ * 合作板块-实体店铺页面
+ */
+.shop-banner .image{width:100%}
+.shop-addr .addr-box dl{font-size:14px;line-height:24px;color:#848484}
+@media only screen and (max-width:550px) {
+    .shop-banner{height:112px}
+    .shop-banner .image{width:550px;position:absolute;left:50%;top:0;margin-left:-275px}
+}
