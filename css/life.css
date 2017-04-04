@@ -1,0 +1,52 @@
+/**
+ * 生活版块
+ */
+/*棒冰简介*/
+.popsicles-instro{padding:0 10%;background-color:#f1f1f1}
+.popsicles-instro .text, .popsicles-instro .image{padding:0}
+.popsicles-instro .text{padding:9% 5%}
+.popsicles-instro .text .box{padding:29% 10%;border:4px solid #f4f4f3}
+.popsicles-instro .text h2, .popsicles-instro .text h3{color:#bf0e6d}
+.popsicles-instro .text p{color:#7a716a}
+.popsicles-instro .text-left{margin-top:-30px}
+.popsicles-instro .text-right{bottom:-30px}
+@media only screen and (max-width:1200px) {
+    .popsicles-instro .text .box{padding:24% 10%}
+}
+@media only screen and (max-width:992px) {
+    .popsicles-instro .text-right{position:inherit}
+}
+@media only screen and (max-width:768px) {
+    .popsicles-instro .text .box{padding:15% 10%}
+}
+
+/*棒冰材料*/
+.popsicles-material{background-color:#f4f4f4}
+.popsicles-material .text, .popsicles-material .image{padding:0}
+.popsicles-material .text{padding:18% 10%}
+.popsicles-material .text h2, .popsicles-material .text p{color:#545353}
+@media only screen and (max-width:768px) {
+    .popsicles-material .text{padding:10%}
+}
+/*棒冰制作方法*/
+.popsicles-making{padding:8% 10%;background-color:#f1f1f1}
+.popsicles-making .text, .popsicles-material .image{padding:0}
+.popsicles-making .image{margin:4% 0 0;padding:1% 0;left:-3%;background-color:#f1f1f1}
+.popsicles-making .text .box{padding:52% 10%;border:4px solid #fff}
+.popsicles-making .text h2, .popsicles-material .text p{color:#545353}
+@media only screen and (max-width:991px) {
+    .popsicles-making .image{position:inherit}
+    .popsicles-making .text .box{padding:10%}
+}
+.popsicles-step{height:160px;overflow:hidden;margin-left:-17px;margin-right:-17px;margin-bottom:20px}
+.popsicles-step .box{padding:0}
+.popsicles-step .sapcing2{padding:4px 2px 0}
+@media only screen and (max-width:991px) {
+    .popsicles-step{height:auto}
+    .popsicles-step .box{height:248px;overflow:hidden}
+}
+@media only screen and (max-width:767px) {
+    .popsicles-step .box{height:auto}
+}
+.popsicles-tooltip .btn-tip{background-color:#bf0e6d}
+.popsicles-tooltip .btn-tip .caret{width: 0;height: 0;border: 6px solid transparent;border-left-color: #bf0e6d;position: absolute;right:-12px;top: 36%}
