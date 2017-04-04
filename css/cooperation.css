@@ -33,8 +33,10 @@
 /*联系表单*/
 .contact-container .form-container .input-box{border:none;border-bottom:1px solid #d1d1d1;box-shadow:none;-webkit-box-shadow:none}
 .contact-container .form-container .submit-box{padding-bottom:40px}
-.contact-container .form-container .submit-box .btn-submit{margin-right:45px;width:210px;height:50px;font-size:20px;background-color:#f4b6c8;color:#fff;letter-spacing:1px}
+.contact-container .form-container .submit-box .btn-submit{margin-right:45px;width:210px;height:50px;font-size:20px;background-color:#f4b6c8;color:#fff;letter-spacing:1px;border:none}
 .contact-container .form-container .submit-box .btn-reset{border:none;font-size:20px;color:#9b9b9b;letter-spacing:1px}
+label.error{margin-bottom:0;position: absolute;top: 35px;right: 8px;padding: 0 8px;color: #c33;cursor: text;background: #fff;background: -webkit-linear-gradient(left,rgba(255,255,255,0),#fff 8px);background: linear-gradient(to right,rgba(255,255,255,0),#fff 8px);visibility: hidden;opacity: 0;-ms-filter: "alpha(Opacity=0)";-webkit-transform: translate(20px,0);-ms-transform: translate(20px,0);transform: translate(20px,0);-webkit-transition: .25s ease-out;transition: .25s ease-out;}
+label.is-visible{visibility: visible;opacity: 1;-ms-filter: "alpha(Opacity=100)";-webkit-transform: translate(0,0);-ms-transform: translate(0,0);transform: translate(0,0);}
 @media only screen and (max-width:768px) {
     .contact-container .form-container .submit-box{padding-top:0;padding-bottom:20px}
     .contact-container .form-container .submit-box .btn-submit{margin-right:10px;width:100px;}
