@@ -1,13 +1,66 @@
 /**
  * bwt板块-明星大使页面
  */
-.bwt-rotation-container{background-color:#f6f8fb}
-/*焦点图*/
+.bwt-rotation-container{background-color:#f6f8fb;border-radius:10px;-webkit-border-radius:10px;-moz-border-radius:10px}
+.bwt-rotation-container .rotation{padding-left:0;padding-right:0}
+.bwt-rotation-container .rotation-desc h3{font-size:40px}
+@media only screen and (max-width:768px) {
+    .bwt-rotation-container{border-radius:10px;-webkit-border-radius:10px;-moz-border-radius:10px}
+}
+
+/**
+ * bwt板块-品牌故事
+ */
+/*品牌创造*/
+.service-center{padding-bottom:60px}
+.service-center .image-box img{width:100%}
+.service-center .article-box h2{font-size:28px}
+.service-center .article-box h2 small{font-size:20px}
+.service-center .article-box .paragraph-box{height:140px}
+.service-center .article-box p{text-indent:1.8em}
+.service-center .article-box .btn-box i:hover{color:#ce025d}
+@media only screen and (max-width:768px) {
+    .service-center{padding-bottom:30px}
+    .service-center .article-box{padding-top:10px}
+    .service-center .article-box h2{font-size:20px;text-align:center;}
+    .service-center .article-box h2 small{font-size:14px}
+    .service-center .article-box .btn-box{display:none}
+    .service-center .article-box .paragraph-box{margin-top:10px;height:auto;}
+    .service-center .article-box .paragraph-box .paragraph{position:relative}
+}
+/*品牌创造-轮播*/
+.brand-container{padding-bottom:60px}
+.brand-container .image, .join-container .image{width:100%}
+@media only screen and (max-width:768px) {
+    .brand-container h2, .join-container h2{font-size:20px}
+    .brand-container{padding-bottom:30px}
+}
+/*轮播*/
 .hotPic{height:auto}
-.arrow-left{top:43%;left:25px}
-.arrow-right{top:43%;right:25px}
-.arrow-left i, .arrow-right i{font-size:65px;color:#fff}
-.pagination{bottom:30px}
+.pagination{bottom:60px;margin:0}
 .swiper-container .swiper-slide{height:auto}
-.swiper-pagination-switch, .swiper-pagination-bullet{display:inline-block;width:16px;height:16px;margin:0 18px;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;background-color:#6aace5}
-.swiper-active-switch, .swiper-pagination-bullet-active{background-color:#fff}
+.swiper-pagination-switch, .swiper-pagination-bullet{display:inline-block;width:40px;height:6px;margin:0 5px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background-color:#dbdbdb}
+.swiper-active-switch, .swiper-pagination-bullet-active{background-color:#ce025d}
+/*food-banner*/
+.food-banner .image{width:100%}
+.food-banner .title {top:18%;left:10%}
+.food-banner .title h2{font-size:30px;color:#cf3f61}
+.food-banner .title p{max-width:480px;opacity:0.2;filter:alpha(opacity=20);border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px}
+@media only screen and (max-width:992px) {
+    .food-banner .title h2{font-size:22px}
+    .food-banner .title p{font-size:12px;margin-top:10px}
+}
+@media only screen and (max-width:768px) {
+    .food-banner .title {top:8%}
+    .food-banner .title h2{width:80%;text-align:center;font-size:16px}
+    .food-banner .title p{width:80%;font-size:12px;margin-top:5px}
+}
+/*公司历史*/
+.company-container{background-color:#f6f8fb;padding:60px 0}
+.company-container .item:hover{background-color:#ffedf5}
+.company-container .timeline{color:#b1b1b1}
+.company-container .timeline strong{font-size:32px}
+.company-container .line-history{border-top:1px solid #979797;width:80px;vertical-align:top}
+@media only screen and (max-width:767px) {
+    .company-container .line-history{display:none}
+}

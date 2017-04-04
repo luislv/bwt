@@ -39,14 +39,6 @@
     .contact-container .form-container .submit-box{padding-top:0;padding-bottom:20px}
     .contact-container .form-container .submit-box .btn-submit{margin-right:10px;width:100px;}
 }
-/*水生活*/
-.life-container{padding-bottom:60px}
-.life-container .image, .join-container .image{width:100%}
-@media only screen and (max-width:768px) {
-    .life-container h2, .join-container h2{font-size:20px}
-    .life-container{padding-bottom:30px}
-    .join-container{padding:40px 0}
-}
 
 /**
  * 合作板块-服务指南页面

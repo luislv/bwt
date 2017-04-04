@@ -25,6 +25,7 @@ a:focus{text-decoration:none}
 .mb3-m{margin-bottom:-3px}
 .fs28{font-size:28px}
 .pb60{padding-bottom:60px}
+.zx2{z-index:2}
 .typo-white, a.typo-white{color:#fff}
 .typo-5fgray, a.typo-5fgray{color:#5f6062}
 .typo-9bgray, a.typo-9bgray{color:#9b9b9b}
@@ -38,6 +39,7 @@ a:focus{text-decoration:none}
 .bg-white{background-color:#fff}
 .bg-f5pink{background-color:#f5b7c8}
 .bg-efgray{background-color:#efefef}
+.bg-cered{background-color:#ce025d}
 .bor-b-e7{border-bottom:1px solid #e7e7e7}
 .contentBox{box-sizing:content-box !important}
 .line-dashed{border-bottom:1px dashed #d1d1d1;height:0}

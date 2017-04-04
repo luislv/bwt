@@ -13,8 +13,6 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="../js/respond.min.js"></script>
     <![endif]-->
-    <link rel="stylesheet" href="../css/idangerous.swiper.css"/>
-    <link rel="stylesheet" href="../css/swiper.min.css"/>
     <link rel="stylesheet" href="../css/base.css"/>
     <link rel="stylesheet" href="../css/global.css"/>
     <link rel="stylesheet" href="../css/bwt.css"/>
@@ -98,8 +96,8 @@
                 <h2 class="fn fs14 inblo typo-5fgray">您所在的位置：</h2>
                 <ol class="breadcrumb">
                     <li><a href="#">首页</a></li>
-                    <li><a href="#">合作</a></li>
-                    <li class="active">招商加盟</li>
+                    <li><a href="#">BWT</a></li>
+                    <li class="active">明星大使</li>
                 </ol>
             </div>
         </div>
@@ -116,25 +114,15 @@
                 </div>
             </article>
         </section>
-        <section>
+        <section class="pb60">
             <div class="row bwt-rotation-container">
-                <div class="col-md-8 col-sm-8 col-xs-12">
-                    <div class="hotPic cf pr">
-                        <a class="arrow-left pa zx2" href="#"><i class="iconfont">&#xe670;</i></a>
-                        <a class="arrow-right pa zx2" href="#"><i class="iconfont">&#xe60a;</i></a>
-                        <div class="swiper-container lb-swiper-container">
-                            <div class="swiper-wrapper lb-container">
-                                <div class="swiper-slide"><a href="#"><img class="fullwidth lb-img mb3-m" src="../images/bwt-star-item01.png" alt="产品"/></a></div>
-                                <div class="swiper-slide"><a href="#"><img class="fullwidth lb-img mb3-m" src="../images/bwt-star-item01.png" alt="产品"/></a></div>
-                                <div class="swiper-slide"><a href="#"><img class="fullwidth lb-img mb3-m" src="../images/bwt-star-item01.png" alt="产品"/></a></div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-8 col-sm-8 col-xs-12 rotation">
+                    <img class="fullwidth" src="../images/bwt-star-item01.png" alt="产品"/>
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <h3>Mammon</h3>
-                    <p class="fs14 lh3 typo-84gray">个人非常重视质量和设计，所以觉得BWT很合心意。不仅造型美观， 而且用起来富有情趣， 这可是请朋友来家里一起分享的绝好理由，没有之一。我喜欢做饭，水的好坏直接影响一道美食的成败，BWT净水壶，轻巧便携，让我再也不需要担心水的问题，看着家人们围坐在起，其乐融融地享受着自己亲手做的美食，那是一种幸福！</p>
-                    <div class="publish-date">发布时间：<time datetime="2017-03-30">2017-03-30</time></div>
+                <div class="col-md-4 col-sm-4 col-xs-12 rotation-desc">
+                    <h3 class="typo-4agray pt30 fn">Mammon</h3>
+                    <p class="fs14 lh3 typo-84gray pt40">个人非常重视质量和设计，所以觉得BWT很合心意。不仅造型美观， 而且用起来富有情趣， 这可是请朋友来家里一起分享的绝好理由，没有之一。我喜欢做饭，水的好坏直接影响一道美食的成败，BWT净水壶，轻巧便携，让我再也不需要担心水的问题，看着家人们围坐在起，其乐融融地享受着自己亲手做的美食，那是一种幸福！</p>
+                    <div class="pt20 pb20 typo-84gray publish-date">发布时间：<time datetime="2017-03-30">2017-03-30</time></div>
                 </div>
             </div>
         </section>
@@ -231,44 +219,6 @@
 </footer>
 <script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="../js/idangerous.swiper.min.js"></script>
 <script src="../js/global.js"></script>
-<script>
-    $(function(){
-        /**
-         *  焦点图
-         */
-
-        // 尺寸缩放，捕获banner图高度
-        resizeLb();
-        window.onresize = function(){resizeLb()};
-
-        var mySwiper = new Swiper('.swiper-container',{
-            pagination: '.pagination',
-            loop: true,
-            grabCursor: true,
-            paginationClickable: true,
-            autoplay: 3000
-        });
-        $('.arrow-left').on('click', function(e){
-            e.preventDefault();
-            mySwiper.swipePrev();
-        });
-        $('.arrow-right').on('click', function(e){
-            e.preventDefault();
-            mySwiper.swipeNext();
-        });
-    })
-
-    /**
-     * banner轮播图尺寸变化时捕捉尺寸
-     */
-    function resizeLb() {
-        var $lbContainer = $(".lb-container");
-        var currentImageHeight = $lbContainer.find(".lb-img").eq(0).height();
-        $lbContainer.height(currentImageHeight);
-        $(".lb-swiper-container").height(currentImageHeight);
-    }
-</script>
 </body>
 </html>
