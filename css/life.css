@@ -53,3 +53,30 @@
 }
 .popsicles-tooltip .btn-tip{background-color:#bf0e6d}
 .popsicles-tooltip .btn-tip .caret{width: 0;height: 0;border: 6px solid transparent;border-left-color: #bf0e6d;position: absolute;right:-12px;top: 36%}
+
+/**
+ * 生活-滤芯
+ */
+.filter-banner02{padding-top:145px}
+.filter-instro{top:-170px;width:40%;padding:4%;background-color:#f6f5f5;opacity:0.8;filter:alpha(opacity=80)}
+.filter-instro .box{padding:20% 10%;border:4px solid #cac7c8}
+.filter-instro h2{color:#bf0e6d}
+.filter-instro p{color:#7a716a}
+.filter-sample{padding-bottom:130px}
+.filter-sample .text{padding:50px 8% 15px;color:#757172}
+.filter-sample .image{padding-left:0;padding-right:0}
+/*轮播*/
+.hotPic{border:3px solid #e4e3e3}
+.pagination{ position: absolute;width:10px;height:10px;text-align: center;-webkit-transition: .3s;-moz-transition: .3s;-o-transition: .3s;transition: .3s;right: 15px;top: 30%;-webkit-transform: translate3d(0,-50%,0);-moz-transform: translate3d(0,-50%,0);-o-transform: translate(0,-50%);-ms-transform: translate3d(0,-50%,0);transform: translate3d(0,-50%,0);z-index: 10;}
+.swiper-container .swiper-slide{height:auto}
+.swiper-pagination-switch, .swiper-pagination-bullet{width: 10px;height: 10px;border-radius: 100%;background: #cac7c8;margin: 12px 0;display: block;cursor:pointer}
+.swiper-active-switch, .swiper-pagination-bullet-active{background-color:#d15d8d}
+
+.filter-principle{margin-top:130px;margin-bottom:110px}
+.filter-principle .figure{background-color:#e4e3e3}
+.filter-principle .figure .text{padding-top:80px}
+.filter-principle .figure .text h2{color:#cf025d;font-size:24px}
+.filter-principle .figure .text h3{color:#f4b5c8}
+.filter-principle .figure .text h3.focus{color:#cf025d}
+.filter-principle .figure .text p{padding-left:45px;color:#908e8e}
+.filter-principle .image{padding-right:0}

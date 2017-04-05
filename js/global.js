@@ -83,3 +83,13 @@ function getEvent(){
         }
     }while(f=f.caller);
 }
+
+/**
+ * banner轮播图尺寸变化时捕捉尺寸
+ */
+function resizeLb() {
+    var $lbContainer = $(".lb-container");
+    var currentImageHeight = $lbContainer.find(".lb-img").eq(0).height();
+    $lbContainer.height(currentImageHeight);
+    $(".lb-swiper-container").height(currentImageHeight);
+}
