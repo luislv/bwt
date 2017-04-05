@@ -4,17 +4,20 @@
 /*棒冰简介*/
 .popsicles-instro{padding:0 10%;background-color:#f1f1f1}
 .popsicles-instro .text, .popsicles-instro .image{padding:0}
-.popsicles-instro .text{padding:9% 5%}
-.popsicles-instro .text .box{padding:29% 10%;border:4px solid #f4f4f3}
+.popsicles-instro .text{padding:5%}
+.popsicles-instro .text .box{padding:36% 10%;border:4px solid #f4f4f3}
 .popsicles-instro .text h2, .popsicles-instro .text h3{color:#bf0e6d}
 .popsicles-instro .text p{color:#7a716a}
 .popsicles-instro .text-left{margin-top:-30px}
 .popsicles-instro .text-right{bottom:-30px}
+.popsicles-instro .text-right .author{bottom:5%;right:5%;color:#7a716a}
 @media only screen and (max-width:1200px) {
-    .popsicles-instro .text .box{padding:24% 10%}
+    .popsicles-instro .text .box{padding:32% 10%}
 }
-@media only screen and (max-width:992px) {
-    .popsicles-instro .text-right{position:inherit}
+@media only screen and (max-width:991px) {
+    .popsicles-instro{padding-bottom:30px}
+    .popsicles-instro .text-right{position:inherit;bottom:0}
+    .popsicles-instro .text .box{padding:10%}
 }
 @media only screen and (max-width:768px) {
     .popsicles-instro .text .box{padding:15% 10%}
