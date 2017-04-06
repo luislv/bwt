@@ -4,7 +4,7 @@
 /*棒冰简介*/
 .popsicles-instro{padding:0 10%;background-color:#f1f1f1}
 .popsicles-instro .text, .popsicles-instro .image{padding:0}
-.popsicles-instro .text{padding:5%}
+.popsicles-instro .text{padding:5%;box-shadow:0 0 10px #ccc;-webkit-box-shadow:0 0 10px #ccc;-moz-box-shadow:0 0 10px #ccc}
 .popsicles-instro .text .box{padding:36% 10%;border:4px solid #f4f4f3}
 .popsicles-instro .text h2, .popsicles-instro .text h3{color:#bf0e6d}
 .popsicles-instro .text p{color:#7a716a}
@@ -118,7 +118,7 @@
     .life-index-instro .text{box-shadow:none;position:inherit;top:0;bottom:0;padding:5%}
 }
 .life-index-sample .image, .life-index-sample .text{padding-left:0;padding-right:0}
-.life-index-sample .text .box{background-color:#f6f6f6;padding:15% 24%}
+.life-index-sample .text .box{background-color:#f6f6f6;padding:15% 24%;box-shadow:0 0 10px #ccc;-webkit-box-shadow:0 0 10px #ccc;-moz-box-shadow:0 0 10px #ccc}
 .life-index-sample .text .box01{margin-left:-10%}
 .life-index-sample .text .box02{margin-right:-10%}
 @media only screen and (max-width:991px) {
