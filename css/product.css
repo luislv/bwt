@@ -1,0 +1,22 @@
+/**
+ * 产品-列表页
+ */
+/*胶囊式导航*/
+.product-nav li a{padding:5px 20px;border-right:1px solid #9b9b9b;border-radius:0;-webkit-border-radius:0;-moz-border-radius:0}
+.product-nav li:last-child a{border-right:none}
+.product-nav li.active a, .product-nav li.active a:hover, .product-nav li.active a:focus {background-color: #ce025d;border-radius:2px;-webkit-border-radius:2px;-moz-border-radius:2px}
+/*产品列表*/
+.product-menu .image{border:1px solid #ededed}
+.product-menu figure:hover{box-shadow:0 0 10px #f5b7c8;-webkit-box-shadow:0 0 10px #f5b7c8;-moz-box-shadow:0 0 10px #f5b7c8}
+.product-menu figure figcaption{padding:20px 8px}
+.product-menu figure:hover figcaption{background-color:#f5b7c8}
+.product-menu figure:hover figcaption p{color:#fff}
+@media only screen and (max-width:413px) {
+    .product-menu .item{width:100%}
+}
+/*分页组件*/
+.holder a{display:inline-block;width:40px;line-height:1;font-size: 14px;cursor: pointer;padding-top:13px;padding-bottom:13px;margin:0 3px;color: #4a4a4a;background-color:#efefef;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px}
+.holder a.jp-current, .holder a.jp-current:hover{color: #fff}
+.holder a.jp-disabled, a.jp-disabled:hover{color: #666;background:none}
+.holder a.jp-current, a.jp-current:hover{cursor: default;background-color: #f5b7c8}
+.holder span{display:none}
