@@ -62,5 +62,6 @@
 .company-container .timeline strong{font-size:32px}
 .company-container .line-history{border-top:1px solid #979797;width:80px;vertical-align:top}
 @media only screen and (max-width:767px) {
+    .company-container{padding:30px 0}
     .company-container .line-history{display:none}
 }

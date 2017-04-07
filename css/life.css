@@ -82,6 +82,7 @@
 .life-index-sample .text .box01{margin-left:-10%}
 .life-index-sample .text .box02{margin-right:-10%}
 @media only screen and (max-width:991px) {
+    .life-channel{padding-bottom:50px}
     .life-index-sample .text .box{padding:10%}
     .life-index-sample .text .box01{margin-left:0}
     .life-index-sample .text .box02{margin-right:0}
@@ -89,3 +90,6 @@
 /*运动饮料*/
 .life-index-sports .box{padding:40px 10% 30px}
 .life-index-sports .image, .life-index-sports .text{padding-left:0;padding-right:0}
+@media only screen and (max-width:768px) {
+    .life-sports-image{margin-top:50px}
+}
