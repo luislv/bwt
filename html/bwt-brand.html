@@ -23,8 +23,8 @@
 <!--头部-->
 <header class="header pr">
     <div class="bg-white pt25 pb20 container logo-container">
-        <a href="#"><img class="mb3-m logo" src="../images/bwt-logo.png" alt="logo"/></a>
-        <div class="logo-desc-box inblo h50 ml15 pl15"><img class="mb3-m logo-desc" src="../images/bwt-logo-desc.png" alt="logo description"/></div>
+        <a href="#"><img class="logo" src="../images/bwt-logo.png" alt="logo"/></a>
+        <div class="logo-desc-box inblo h50 ml15 pl15"><img class="logo-desc" src="../images/bwt-logo-desc.png" alt="logo description"/></div>
         <a class="hide fr btn-menu J_navMenu" href="javascript:void(0);"><i class="iconfont fs26 typo-5fgray">&#xe654;</i></a>
         <nav class="fr">
             <ul class="fl header-nav">
@@ -89,7 +89,7 @@
 <!--主内容-->
 <main>
     <div class="public-banner pr cf">
-        <img class="image block mb3-m fullwidth" src="../images/bwt-brand-banner.png" alt="banner"/>
+        <img class="image block fullwidth" src="../images/bwt-brand-banner.jpg" alt="banner"/>
     </div>
     <!--面包屑导航-->
     <nav class="bor-b-e7">
@@ -108,7 +108,7 @@
         <section>
             <div class="row service-center">
                 <div class="col-md-6 col-sm-12 col-xs-12 pt40 image-box">
-                    <img class="mb3-m" src="../images/service-center.png" alt=""/>
+                    <img class="fullwidth" src="../images/service-center.jpg" alt=""/>
                 </div>
                 <div class="col-md-6 col-sm-12 col-xs-12 pt40 article-box">
                     <article>
@@ -145,9 +145,9 @@
                     <div class="hotPic cf pr">
                         <div class="swiper-container lb-swiper-container pb100">
                             <div class="swiper-wrapper lb-container">
-                                <div class="swiper-slide"><a href="#"><img class="lb-img" src="../images/bwt-brand-rotation01.png" width="100%" alt="品牌" /></a></div>
-                                <div class="swiper-slide"><a href="#"><img class="lb-img" src="../images/bwt-brand-rotation01.png" width="100%" alt="品牌" /></a></div>
-                                <div class="swiper-slide"><a href="#"><img class="lb-img" src="../images/bwt-brand-rotation01.png" width="100%" alt="品牌" /></a></div>
+                                <div class="swiper-slide"><a href="#"><img class="lb-img" src="../images/bwt-brand-rotation01.jpg" width="100%" alt="品牌" /></a></div>
+                                <div class="swiper-slide"><a href="#"><img class="lb-img" src="../images/bwt-brand-rotation01.jpg" width="100%" alt="品牌" /></a></div>
+                                <div class="swiper-slide"><a href="#"><img class="lb-img" src="../images/bwt-brand-rotation01.jpg" width="100%" alt="品牌" /></a></div>
                             </div>
                         </div>
                         <div class="pagination pa fullwidth tc zx2"></div>
@@ -157,7 +157,7 @@
         </section>
     </div>
     <div class="food-banner pr">
-        <img class="image block mb3-m fullwidth" src="../images/bwt-brand-food.png" alt="food banner"/>
+        <img class="image block fullwidth" src="../images/bwt-brand-food.jpg" alt="food banner"/>
         <div class="pa title">
             <h2 class="fn tc">我们只是为更好的美食服务</h2>
             <p class="mt20 pt20 pb20 pl15 pr15 fs14 lh3 bg-cered typo-white">从多年积累中，提炼用验、交互、设计等产品需求，从而建立WEB极速建站产品，推翻大多数用户认为模板建站价格低所以品质差的观念。从多年积累中，提炼用验、交互、设计等产品需求，从而建立…</p>
@@ -201,7 +201,7 @@
         <div class="container footer-container cf">
             <div class="row">
                 <div class="col-md-3 col-sm-7 col-xs-7 pt25 contact-container">
-                    <img class="block mb3-m pb15" src="../images/bwt-logo-footer.png" alt="logo"/>
+                    <img class="block pb15" src="../images/bwt-logo-footer.png" alt="logo"/>
                     <div class="row">
                         <div class="col-md-12 col-sm-6 col-xs-12 mt10 fs12 lh1 typo-a7gray">BWT BARRIER Europe GmbH</div>
                         <div class="col-md-12 col-sm-6 col-xs-12 mt10 fs12 lh1 typo-a7gray">Walter-Simmer-Strasse</div>
@@ -296,15 +296,20 @@
          */
 
         // 尺寸缩放，捕获banner图高度
-        resizeLb();
-        window.onresize = function(){resizeLb()};
+            // 尺寸缩放，捕获banner图高度
+        $(window).on('load', function() {
+            resizeLb();
+        });
+        $(window).on('resize', function() {
+            resizeLb();
+        });
 
         var mySwiper = new Swiper('.swiper-container',{
-            pagination: '.pagination',
-            loop: true,
-            grabCursor: true,
-            paginationClickable: true,
-            autoplay: 3000
+            pagination: '.pagination', // 分页容器
+            loop: true,  // 循环轮播
+            grabCursor: true,  // 鼠标覆盖Swiper时指针会变成抓手形状
+            paginationClickable: true,  // 点击分页器的指示点分页器会控制Swiper切换
+            autoplay: 3000  // 自动轮播时间间隔
         });
 
         /**
