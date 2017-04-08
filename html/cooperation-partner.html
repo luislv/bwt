@@ -133,7 +133,7 @@
             </div>
         </div>
         <!--联系我们表单-->
-        <form id="form-contact" action="" method="post" role="form">
+        <form id="form-contact" action="#" method="post" role="form">
             <fieldset>
                 <legend class="hide">联系我们表单</legend>
                 <div class="row form-container">
@@ -271,7 +271,6 @@
         // 验证
         var  $formContact = $('#form-contact');
         $formContact.validate({
-            debug: true,
             rules: {
                 name: {
                     required: true
@@ -312,6 +311,7 @@
             errorClass: "error is-visible", // 错误提示自定义样式
             submitHandler: function(form){
                 form.submit();
+                return false;
             }
         });
 

@@ -2,8 +2,10 @@
  * 产品-列表页
  */
 /*胶囊式导航*/
-.product-nav li a{padding:5px 20px;border-right:1px solid #9b9b9b;border-radius:0;-webkit-border-radius:0;-moz-border-radius:0}
-.product-nav li:last-child a{border-right:none}
+.product-nav li a{padding:5px 20px;border-radius:0;-webkit-border-radius:0;-moz-border-radius:0}
+.product-nav li+li{margin-left:0}
+.product-nav li+li a{border-left:1px solid #9b9b9b}
+
 .product-nav li.active a, .product-nav li.active a:hover, .product-nav li.active a:focus {background-color: #ce025d;border-radius:2px;-webkit-border-radius:2px;-moz-border-radius:2px}
 /*产品列表*/
 .product-menu .image{border:1px solid #ededed}
@@ -44,6 +46,12 @@
 .product-detail .swiper-container .swiper-slide{height:auto}
 .product-detail .swiper-pagination-switch{width: 10px;height: 10px;border-radius: 100%;background: #cac7c8;margin: 12px 0;display: block;cursor:pointer}
 .product-detail .swiper-active-switch{background-color:#d15d8d}
+@media only screen and (max-width:560px) {
+    .product-detail .pagination{top:20%}
+}
+@media only screen and (max-width:413px) {
+    .product-detail .pagination{top:5%}
+}
 
 .filter-principle{margin-top:130px;margin-bottom:110px}
 .filter-principle .figure{background-color:#e4e3e3}

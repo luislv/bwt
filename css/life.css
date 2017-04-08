@@ -53,6 +53,9 @@
 }
 .popsicles-tooltip .btn-tip{background-color:#bf0e6d}
 .popsicles-tooltip .btn-tip .caret{width: 0;height: 0;border: 6px solid transparent;border-left-color: #bf0e6d;position: absolute;right:-12px;top: 36%}
+@media only screen and (max-width:767px) {
+    .popsicles-tooltip{margin-left:0;margin-right:0}
+}
 
 /**
  * 生活-生活
@@ -76,6 +79,10 @@
 @media only screen and (max-width:768px) {
     .life-index-instro{padding:0}
     .life-index-instro .text{box-shadow:none;position:inherit;top:0;bottom:0;padding:5%}
+}
+@media only screen and (max-width:500px) {
+    .popsicles-banner{height:215px}
+    .popsicles-banner img{position:absolute;left:50%;height:215px;width:auto;margin-left:-250px}
 }
 .life-index-sample .image, .life-index-sample .text{padding-left:0;padding-right:0}
 .life-index-sample .text .box{background-color:#f6f6f6;padding:15% 24%;box-shadow:0 0 10px #ccc;-webkit-box-shadow:0 0 10px #ccc;-moz-box-shadow:0 0 10px #ccc}
